@@ -1,0 +1,105 @@
+div{
+    position:relative;
+}
+div img{
+    height: 300px;
+    width:200px;
+    /* z-index: 1;  */
+    /* transition: right 3s ease-in-out; */
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    left:0;
+    transition: all 1s ease-in-out;
+    border :2px solid black;
+}
+
+#img1 {
+    animation: slide1 1s ease-in-out forwards;
+}
+#img2 {
+    animation: slide2 2s ease-in-out forwards;
+}
+#img3 {
+    animation: slide3 3s ease-in-out forwards;
+}
+#img4 {
+    animation: slide4 4s ease-in-out forwards;
+}
+#img5 {
+    animation: slide5 5s ease-in-out forwards;
+}
+@keyframes slide1 {
+    from {
+        transform: translateX(100%);
+        margin-left:100%;
+
+    }
+    to {
+        transform: translateX(0%);
+        margin-left:0%;
+
+    }
+}
+@keyframes slide2 {
+    from {
+        transform: translateX(100%);
+        top: 40px;
+        left: 30px;
+        margin-left:100%;
+    }
+    to {
+        transform: translateX(0%);
+        top: 40px;
+        left: 30px;
+        margin-left:0%;
+    }
+}
+@keyframes slide3 {
+    from {
+        transform: translateX(100%);
+        top: 70px;
+        left: 60px;
+        margin-left:100%
+
+    }
+    to {
+        transform: translateX(0%);
+        top: 70px;
+        left: 60px;
+        margin-left:0%
+
+    }
+}
+@keyframes slide4 {
+    from {
+        transform: translateX(100%);
+        top: 100px;
+        left: 90px;
+        margin-left:100%
+
+    }
+    to {
+        transform: translateX(0%);
+        top: 100px;
+        left: 90px;
+        margin-left:0%
+
+    }
+}
+@keyframes slide5 {
+    from {
+        transform: translateX(100%);
+        top: 130px;
+        left: 120px;
+        margin-left:100%
+
+    }
+    to {
+        transform: translateX(0%);
+        top: 130px;
+        left: 120px;
+        margin-left:0%
+
+    }
+}
